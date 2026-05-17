@@ -12,11 +12,21 @@ app.use(express.json());
 app.get("/api/script/GLOBAL-LOADING-SCREEN", (req, res) => {
     res.json({
         version: "1.0.1",
-        author: "[SSNC] SPHLAC",
-        contributors: {
-            Nobody: ""
-        },
-        totalLines: 1462
+        author: "[FOUNDER] SPHLAC",
+        contributors: "[FOUNDER] camaleon45678., [DEV] Hugo",
+        compileDate: "17-05-2026 (dd/mm/yyyy)",
+        allowPreviousVersions: false,
+        DEPRECATED: false,
     });
 });
+
+app.get("/api/script/GLOBAL-LOADING-SCREEN/1.0.0", (req, res) => {
+    res.json({
+        version: "1.0.0",
+        author: "[FOUNDER] SPHLAC",
+        contributors: "(Nobody)",
+        compileDate: "13-05-2026 (dd/mm/yyyy)",
+        DEPRECATED: true,
+    });
+})
 

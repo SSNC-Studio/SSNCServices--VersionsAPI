@@ -9,7 +9,7 @@ app.listen(PORT, () => {
 
 app.use(express.json());
 
-app.get("/api/script/GLOBAL-LOADING-SCREEN?uid=1234", (req, res) => {
+app.get("/api/script/GLOBAL-LOADING-SCREEN", (req, res) => {
     res.json({
         version: "1.2.1"
     });
